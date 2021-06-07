@@ -1,8 +1,53 @@
-# README
-
 **REST Users API**
+
+This is a simple Ruby on Rails API made to create, list and show users. It uses REST API principles. Here you can find a basic controller made using TDD approach. You can find a list of endpoints availables down below. Also, if you use POSTMAN, you can download and import `REST-users-API.postman_collection.json` file to save time building the requests from stratch. You can find it in the root folder
 ----
-This is a Simple Ruby on Rails API where you can see how to create a REST API using just a model. Here you can find a basic controller made using TDD as development tool. You can find a list of endpoints available down below. Also, if you use POSTMAN, you can download and import `REST-users-API.postman_collection.json` file to save time building the requests from stratch. You can find it in the root folder
+## Install
+
+### Clone the repository
+
+```shell
+git clone git@github.com:Jsscrdng/REST-users-api.git
+cd REST-users-api
+```
+
+### Check your Ruby version
+
+```shell
+ruby -v
+```
+
+The ouput should start with something like `ruby 2.6.3`
+
+If not, install the right ruby version using [rbenv](https://github.com/rbenv/rbenv) (it could take a while):
+
+```shell
+rbenv install 2.6.3
+```
+
+### Install dependencies
+
+Using [Bundler](https://github.com/bundler/bundler):
+
+```shell
+bundle install
+```
+
+### Initialize the database
+
+```shell
+rails db:create db:migrate
+```
+
+## Serve
+
+```shell
+rails s
+```
+
+
+**Usage**
+----
 
 ### **List users**
 
