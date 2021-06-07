@@ -59,17 +59,25 @@ rails s
 
 * **Success Response:**
   * **Code:** 200 <br />
-    **Content:** `[
-    {
-        "id": 1,
-        "full_name": "Juan Gonzalez",
-        "date_of_birth": "2000-10-02",
-        "sex": "male",
-        "image_url": "https://www.adslzone.net/app/uploads-adslzone.net/2019/04/imagen.jpg",
-        "created_at": "2021-06-05T17:40:15.581Z",
-        "updated_at": "2021-06-05T17:40:15.581Z"
-    }
-]`
+    **Content:** ```[
+        {
+            "id": 1,
+            "full_name": "Juan Gonzalez",
+            "date_of_birth": "2000-10-02",
+            "sex": "male",
+            "image_url": "https://www.adslzone.net/app/uploads-adslzone.net/2019/04/imagen.jpg",
+            "created_at": "2021-06-05T17:40:15.581Z",
+            "updated_at": "2021-06-05T17:40:15.581Z"
+        },
+        {
+            "id": 2,
+            "full_name": "Marcos Perez",
+            "date_of_birth": "1980-10-02",
+            "sex": "male",
+            "image_url": "https://www.adslzone.net/app/uploads-adslzone.net/2019/03/imagen.jpg",
+            "created_at": "2021-06-05T17:42:10.581Z",
+            "updated_at": "2021-06-05T17:42:10.581Z"        }
+    ]```
 * **Sample Call:**
 * _{baseURL}/users_
 
@@ -83,7 +91,7 @@ rails s
 
 * **Success Response:**
   * **Code:** 200 <br />
-    **Content:** `{
+    **Content:** ```{
         "id": 1,
         "full_name": "Juan Gonzalez",
         "date_of_birth": "2000-10-02",
@@ -91,7 +99,7 @@ rails s
         "image_url": "https://www.adslzone.net/app/uploads-adslzone.net/2019/04/imagen.jpg",
         "created_at": "2021-06-05T17:40:15.581Z",
         "updated_at": "2021-06-05T17:40:15.581Z"
-    }`
+    }```
 * **Sample Call:**
   _{baseURL}/users/:id_
   
@@ -104,14 +112,14 @@ rails s
   `POST`
 * **Data Params**
 
-  `{
-    "user": {
-        "full_name": "Juan Gonzalez",
-        "sex": "male",
-        "date_of_birth": "2000-10-02",
-        "image_url": "https://www.adslzone.net/app/uploads-adslzone.net/2019/04/imagen.jpg"
-    } 
-}`
+  ```{
+        "user": {
+            "full_name": "Juan Gonzalez",
+            "sex": "male",
+            "date_of_birth": "2000-10-02",
+            "image_url": "https://www.adslzone.net/app/uploads-adslzone.net/2019/04/imagen.jpg"
+        } 
+    }```
 
 * **Success Response:**
   * **Code:** 200 <br />
