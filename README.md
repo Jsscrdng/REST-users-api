@@ -56,10 +56,13 @@ rails s
 * **Method:**
   
   `GET`
+* **Sample Call:**
+* _{baseURL}/users_
 
 * **Success Response:**
   * **Code:** 200 <br />
-    **Content:** ```[
+    **Content:** 
+    ```[
         {
             "id": 1,
             "full_name": "Juan Gonzalez",
@@ -78,9 +81,8 @@ rails s
             "created_at": "2021-06-05T17:42:10.581Z",
             "updated_at": "2021-06-05T17:42:10.581Z"        
         }
-    ]```
-* **Sample Call:**
-* _{baseURL}/users_
+    ]
+    ```
 
 ### **Show user**
 
@@ -89,10 +91,15 @@ rails s
 * **Method:**
   
   `GET`
+  
+* **Sample Call:**
+  _{baseURL}/users/1_
 
 * **Success Response:**
   * **Code:** 200 <br />
-    **Content:** ```{
+    **Content:**
+    ```
+    {
         "id": 1,
         "full_name": "Juan Gonzalez",
         "date_of_birth": "2000-10-02",
@@ -100,9 +107,8 @@ rails s
         "image_url": "https://www.adslzone.net/app/uploads-adslzone.net/2019/04/imagen.jpg",
         "created_at": "2021-06-05T17:40:15.581Z",
         "updated_at": "2021-06-05T17:40:15.581Z"
-    }```
-* **Sample Call:**
-  _{baseURL}/users/:id_
+    }
+    ```
   
 ### **Create user**
 
@@ -113,14 +119,18 @@ rails s
   `POST`
 * **Data Params**
 
-  ```{
+  ```
+  {
         "user": {
             "full_name": "Juan Gonzalez",
             "sex": "male",
             "date_of_birth": "2000-10-02",
             "image_url": "https://www.adslzone.net/app/uploads-adslzone.net/2019/04/imagen.jpg"
         } 
-    }```
+    }
+    ```
+* **Sample Call:**
+    _POST #{baseURL}/users_
 
 * **Success Response:**
   * **Code:** 200 <br />
@@ -136,5 +146,3 @@ rails s
           "updated_at": "2021-06-05T17:40:15.581Z"
       }
       ```
-* **Sample Call:**
-    _{baseURL}/users/:id_
