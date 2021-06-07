@@ -76,7 +76,8 @@ rails s
             "sex": "male",
             "image_url": "https://www.adslzone.net/app/uploads-adslzone.net/2019/03/imagen.jpg",
             "created_at": "2021-06-05T17:42:10.581Z",
-            "updated_at": "2021-06-05T17:42:10.581Z"        }
+            "updated_at": "2021-06-05T17:42:10.581Z"        
+        }
     ]```
 * **Sample Call:**
 * _{baseURL}/users_
